@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<script src="../angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="lastName='Mathews'; firstName='Sisira'">
+  <p>The name is: <span ng-bind="firstName + ' ' + lastName"></span></p>
+  <!--or-->
+  <p>The name is <span ng-bind="lastName"></span>{{ " "}}<span ng-bind="firstName"> <span></span></p>
+</div>
+
+</body>
+</html>

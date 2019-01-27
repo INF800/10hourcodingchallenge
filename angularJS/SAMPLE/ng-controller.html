@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<script src="../angular.min.js"></script>
+<body>
+
+
+<!-- if you want to use this as ng-int.html and sample.html -->
+<!-- 1. put ng-app="" -->
+<!-- 2. remove ng-controller-->
+
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+    First Name: <input type="text" ng-model="firstName"><br>
+    Last Name: <input type="text" ng-model="lastName"><br>
+    <br>
+    Full Name: {{firstName + " " + lastName}}
+    
+    </div>
+    
+    <script>
+
+        //without this script, angularJS wont work
+        //because ng-controller is present
+
+    var app = angular.module('myApp', []); 
+    app.controller('myCtrl', function($scope) {
+      $scope.firstName= "John";
+      $scope.lastName= "Doe";
+    });
+    </script>
+
+
+</body>
+</html>

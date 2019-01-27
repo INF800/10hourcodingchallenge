@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script src="../angular.min.js"></script>
+    </head>
+
+    <body>
+        <!--remove ng-app and expressions will be executed as it is without execution-->
+        <div ng-app="">
+            <p> enter : <input type="text" ng-model="enteredText"></p>
+            <!--from a directive-->
+            <p ng-bind="enteredText"></p>
+            <!--directly-->
+            <p>{{enteredText}}</p>
+        </div>
+
+
+    </body>
+</html>
